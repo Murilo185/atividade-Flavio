@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qikbyte - Programação e Banco de Dados</title>
+</head>
+<body>
+    <h1>=== Cursos ===</h1>
+    <table>
+        <tr>
+            <th style="width: 200px;">DESCRIÇÃO</th>
+            <th>CARGA HORÁRIA</th>
+        </tr>
+        <% for(i=0; i < dados.length; i++) { %>
+            <tr>
+                <td style="width: 200px;">
+                    <%= dados[i].descricao %>
+                </td>
+                <td style="width: 200px;">
+                    <%= dados[i].carga_horaria %>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
